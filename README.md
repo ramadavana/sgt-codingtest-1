@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Coding Test 1 - PT SGT
+Nama: Rama Davana
+Posisi yang dilamar: Front-End Developer
 
-## Getting Started
+## Project Requirement
+1. Node versi 20.15.0
+2. NextJS versi 14.2.15
+3. React versi ^18
+4. Ant Design versi ^5.21.3
+5. Tailwind CSS versi ^3.4.1
 
-First, run the development server:
+Catatan:
+- Ketika membuat project saya menggunakan @latest sehingga sebagian besar dependencies menggunakan versi "latest".
+- Selengkapnya dapat melihat di package.json (Seharusnya menjalankan command instalasi saja sudah cukup)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## How to Run
+1. Clone/Download repositori ini.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Buka terminal di dalam folder, dan jalankan command di bawah ini satu per satu:
+   ```bash
+   npm install
+   ```
+   Kemudian:
+   ```bash
+   npm run dev
+   ```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+3. Access aplikasi dapat melalui localhost:
+   ```bash
+   http://localhost:3000
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+4. Homepage-nya tidak ada, hanya fitur loading saja, dan langsung direct ke Login dengan delay 3 detik.
 
-## Learn More
+5. Ketika login, dapat memasukkan input apa saja (tidak terintegrasi API). Diisi kosong juga bisa login.
 
-To learn more about Next.js, take a look at the following resources:
+6. Setelah menekan button submit/login, akan redirect lagi ke halaman Dashboard yang berisikan table dengan data yang terintegrasi dengan API. (Data yang diambil secara keseluruhan)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+7. Terdapat fitur untuk filter data di atas table dengan form "Name" dan "Country". Input yang diberikan juga dapat dikombinasikan, seperti name = "Universitas" + country = "Indonesia"
+   - Untuk "Name" tipe data string, dapat berisikan apa saja, tanpa minimal karakter, dan tanpa case sensitive (uppercase/lowercase tidak berpengaruh)
+   - Untuk "Country" tipe data string, harus berisikan nama negara dengan lengap termasuk spasi, dan tanpa case sensitive, contoh:
+     ```bash
+     indonesia
+     Indonesia
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+     United States
+     united states
+     ```
 
-## Deploy on Vercel
+8. Tekan tombol "Filter" untuk menampilkan data yang sudah di-filter sesuai dengan input yang diberikan.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Note
+Tolong baca juga kodingan saya, apabila ada kekurangan secara struktural ataupun efisiensi dalam penulisan, saya mohon maaf. Hal tersebut dikarenakan keterbatasan waktu yang membuat saya mempelajari NextJS serta Ant Design, baik secara struktural ataupun syntax, dalam waktu yang relatif singkat.
