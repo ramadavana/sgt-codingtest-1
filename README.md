@@ -1,6 +1,6 @@
 ## Coding Test 1 - PT SGT
-Nama: Rama Davana
-Posisi yang dilamar: Front-End Developer
+- Nama: Rama Davana
+- Posisi yang dilamar: Front-End Developer
 
 ## Project Requirement
 1. Node versi 20.15.0
