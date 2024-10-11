@@ -8,7 +8,7 @@ const Home = () => {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      router.push("/pages/login");
+      router.push("../pages/login");
     }, 3000);
 
     return () => clearTimeout(timer);
